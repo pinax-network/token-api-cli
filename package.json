@@ -1,10 +1,11 @@
 {
   "name": "@pinax/token-api-cli",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Pinax Token API CLI - Power your apps & AI agents with real-time token data",
   "type": "module",
   "bin": {
-    "token-api": "./dist/cli.mjs"
+    "token-api": "./dist/cli.mjs",
+    "@pinax/token-api": "./dist/cli.mjs"
   },
   "files": [
     "dist",
