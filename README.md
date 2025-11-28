@@ -105,27 +105,11 @@ git clone https://github.com/pinax-network/token-api-cli.git
 cd token-api-cli
 
 # Install dependencies
-bun install
+npm install
 
 # Build the package
-bun run build
+npm run build
 ```
-
-## Docker
-
-Run in containerized environments:
-
-```bash
-# Build image
-docker build -t token-api .
-
-# Run service
-docker run \
-  -e TOKENAPI_KEY=<your-api-token-jwt> \
-  token-api evm tokens transfer --from 0x1234...abcd --network mainnet --limit 5
-```
-
-See [Docker Guide](docs/DOCKER.md) for Docker Compose examples and production deployment.
 
 ## Related Resources
 
