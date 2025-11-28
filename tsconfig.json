@@ -21,7 +21,7 @@
     "noPropertyAccessFromIndexSignature": false
   },
   "files": [
-    "index.ts"
+    "cli.ts"
   ],
   "exclude": [
     "node_modules",

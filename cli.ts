@@ -14,6 +14,7 @@
 import 'dotenv/config';
 import { Command } from 'commander';
 import { TokenAPI } from '@pinax/token-api';
+import { version, description } from './package.json' assert { type: 'json' };
 
 const program = new Command();
 
@@ -43,10 +44,8 @@ function handleError(error: unknown): void {
 // ============================================================================
 program
   .name('@pinax/token-api')
-  .description(
-    'Pinax Token API - Power your apps & AI agents with real-time token data',
-  )
-  .version('0.1.2');
+  .description(description)
+  .version(version);
 
 // ============================================================================
 // EVM Commands

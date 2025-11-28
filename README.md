@@ -105,10 +105,10 @@ git clone https://github.com/pinax-network/token-api-cli.git
 cd token-api-cli
 
 # Install dependencies
-npm install
+bun install
 
 # Build the package
-npm run build
+bun run build
 ```
 
 ## Related Resources
