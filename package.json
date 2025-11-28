@@ -1,10 +1,10 @@
 {
   "name": "@pinax/token-api-cli",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Pinax Token API CLI - Power your apps & AI agents with real-time token data",
   "type": "module",
   "bin": {
-    "token-api": "./dist/index.mjs"
+    "token-api": "./dist/cli.mjs"
   },
   "files": [
     "dist",
@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "prepublishOnly": "bun run build",
-    "build": "bun build ./cli.ts --outfile ./dist/cli.mjs --target=node",
+    "build": "bun build ./cli.ts --outfile ./dist/cli.mjs --target=node && chmod +x ./dist/cli.mjs",
     "lint": "biome lint .",
     "lint:fix": "biome lint --write .",
     "format": "biome format --write ."

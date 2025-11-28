@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /**
  * @pinax/token-api CLI
  *
