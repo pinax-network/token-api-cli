@@ -14,6 +14,7 @@
   "scripts": {
     "prepublishOnly": "bun run build",
     "build": "bun build ./cli.ts --outfile ./dist/cli.mjs --target=node && chmod +x ./dist/cli.mjs",
+    "typecheck": "tsc --noEmit",
     "lint": "biome lint .",
     "lint:fix": "biome lint --write .",
     "format": "biome format --write ."
