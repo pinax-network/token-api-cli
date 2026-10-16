@@ -75,13 +75,13 @@ token-api monitoring networks
 
 ### Development Usage
 
-When running from the repository using `npm run cli`, use `--` to separate npm arguments from CLI options:
+When running from the repository (see [Building from Source](#building-from-source)), build the CLI with `bun run build`, then run `./dist/cli.mjs`, the file behind the `token-api` command, with the same arguments:
 
 ```bash
-# Correct usage with npm run
-npm run cli -- evm tokens transfers --network mainnet --limit 10
-npm run cli -- svm tokens transfers --network solana --limit 10
-npm run cli -- monitoring health
+bun run build
+./dist/cli.mjs evm tokens transfers --network mainnet --limit 10
+./dist/cli.mjs svm tokens transfers --network solana --limit 10
+./dist/cli.mjs monitoring health
 ```
 
 ### Help
